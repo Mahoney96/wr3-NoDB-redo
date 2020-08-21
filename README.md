@@ -32,7 +32,7 @@
 #### Back-End (Database - SQL)
 
     Dependencies:
-        - massive => backend (req, res)
+        - massive => backend (req, res) (connection with Heroku & SQL DB)
         - SQL (database)
         - dotenv (loads App environment variables, )
         - bcryptjs (authentication/security)
@@ -41,7 +41,7 @@
 
     Environment:
         - dotenv: (For environment connection between db. local port, and server)
-        - massive: (Handling our connection with Heroku & SQL)
+        - massive: (Handling our connection with Heroku & SQL DB)
 
 
 ***icebox***
