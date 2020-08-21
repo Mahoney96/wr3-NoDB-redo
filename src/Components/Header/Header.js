@@ -1,18 +1,11 @@
 
-import React from 'react';
+import React, { Component } from 'react';
 
-const Header = () => {
-    return <div>
-        This is a header component!
-    </div>
-};
+class Header extends React.Component {
+    render(
+
+    )
+}
+
 
 export default Header;
-
-
-
-// import React, { Component } from "react";
-
-// class App extends Component {
-//     render
-// }

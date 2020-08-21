@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.App-logo {
+  /* Group 38 */
+
+position: absolute;
+width: 100.99px;
+height: 81.9px;
+
+
+
+/* Rectangle 109 */
+
+position: absolute;
+width: 100.97px;
+height: 81.87px;
+
+background: #AB2A19;
+transform: rotate(0.02deg);
+
+
+/* Ellipse 2 */
+
+position: absolute;
+width: 74px;
+height: 77px;
+
+background: #FFFFFF;
+
+
+/* Line 16 */
+
+position: absolute;
+width: 60.68px;
+height: 45.91px;
+
+border: 14px solid #AB2A19;
+transform: rotate(164.86deg);
+
+}
