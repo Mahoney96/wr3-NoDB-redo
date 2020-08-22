@@ -27,7 +27,7 @@
     - massive (to be rquired in Main server file)
     - express (Handles creating a RESTFUL API)
     - express-sessions (Handles creating user-sessions/sessions in general)
-    - Express 
+    - Express ()
 
 
 #### Back-End (Database - SQL)
@@ -40,7 +40,13 @@
         - bcryptjs (authentication/security)
 
     Endpoints:
-        
+        - Shelves
+            • GET - api/shelf/:id -Returns a bin object. If there is no bin, returns null
+            • :id is the shelf id. Which can be 'A', 'B', 'C', 'D'.
+        - Bins
+            • GET - /api/bin/:id - Ret
+            • PUT - /api/bin/:id - (Updates) and (Returns) a (bin) {object}
+
 
     File Structure:
 
