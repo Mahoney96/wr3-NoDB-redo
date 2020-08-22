@@ -26,7 +26,7 @@
 #### Server: 
     - massive (to be rquired in Main server file)
     - express (Handles creating a RESTFUL API)
-    - express-sessions (Handles creating user-sessions/sessions in general)
+    - express-sessions (Handles creating user-sessions/App sessions in general)
     - Express ()
 
 
@@ -42,10 +42,22 @@
     Endpoints:
         - Shelves
             • GET - api/shelf/:id -Returns a bin object. If there is no bin, returns null
-            • :id is the shelf id. Which can be 'A', 'B', 'C', 'D'.
+            • (:id) is the shelf id. Which can be 'A', 'B', 'C', 'D'.
+
         - Bins
-            • GET - /api/bin/:id - Ret
+            • GET - /api/bin/:id - Returns a bin object. If there is no bin, returns null. 
+                • (:id) is the (shelf) and (bin) (id) EX. - 'A2', 'C4', 'B2'..
+
             • PUT - /api/bin/:id - (Updates) and (Returns) a (bin) {object}
+                • This endpoint is only accesible if there is a bin object.
+                    • (:id) is the (shelf) and (bin) combined. EX - 'A5', 'B1', 'C3'.
+
+            •DELETE - /api/bin/:id - Deletes a bin object. Returns nothing.
+                • :id is the shelf and bn id combined. EX. - 'A2', 'C4', 'B2'.
+            
+            • POST /api/bin/:id - Cretes a new bin object. Returns nothing. 
+                • This endpoint should only be accessible if there is not a bin object already. 
+                • :id is the shelf and bin id combined. EX. - 'A2', 'C4', 'B2'.
 
 
     File Structure:
