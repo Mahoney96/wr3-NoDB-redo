@@ -16,7 +16,7 @@ massive({
 }).then( db => {
     app.set("db", db)
     console.log('your db connected... Alright Alright Alright')
-}).catch(err =>  console.log(err));
+}).catch(err =>  console.log((err)`No Connection Compadre`));
 
 // Endpoints Here: //
 // Get from db API
