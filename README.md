@@ -39,6 +39,9 @@
         - dotenv (loads App environment variables, )
         - bcryptjs (authentication/security)
 
+    Endpoints:
+        
+
     File Structure:
 
     Environment:
