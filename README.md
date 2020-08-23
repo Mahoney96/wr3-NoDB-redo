@@ -1,15 +1,13 @@
 #### Shelfie Wr3-App
 
-#### Database
-
 #### Front-end (client-side)
 
     Dependencies:
-        - express
-        - express-session (handles making user sessions/ session in general)
-        - axios => (req, res)
-        - react-redux 
-        -react-router-DOM
+        • express: The server framework that the Axios requests are sent on. 
+        • express-session (handles making user sessions/ session in general)
+        • axios => (req, res) The application that makes the requests. A promise based HTTP client for making requests to the external servers from a node environment or browser.
+        • react-redux 
+        • react-router-DOM
 
     File Structure:
     - src
@@ -23,39 +21,43 @@
         
 
 
-#### Server: 
-    - massive (to be rquired in Main server file)
-    - express (Handles creating a RESTFUL API)
-    - express-sessions (Handles creating user-sessions/App sessions in general)
-    - Express ()
+#### Server:
+    Dependencies:
+    • massive (to be rquired in Main server file)
+    • express (Handles creating a RESTFUL API)
+    • express-sessions (Handles creating user-sessions/App sessions in general)
+    • Express (Handles sending the server routing requests)
+
+    File Structure: 
+
 
 
 #### Back-End (Database - SQL)
 
     Dependencies:
-        - express (Backend is created using Express)
-        - massive => backend (req, res) (connection with Heroku & SQL DB)
-        - SQL (database)
-        - dotenv (loads App environment variables, )
-        - bcryptjs (authentication/security)
+        • express (Backend is created using Express)
+        • massive => backend (req, res) (connection with Heroku & SQL DB)
+        • SQL (database). Massive using express as the server framework
+        • dotenv (loads App environment variables, )
+        • bcryptjs (authentication/security)
 
     Endpoints:
         - Shelves
-            • GET - api/shelf/:id -Returns a bin object. If there is no bin, returns null
+            • GET: api/shelf/:id -Returns a bin object. If there is no bin, returns null
             • (:id) is the shelf id. Which can be 'A', 'B', 'C', 'D'.
 
         - Bins
-            • GET - /api/bin/:id - Returns a bin object. If there is no bin, returns null. 
+            • GET: /api/bin/:id - Returns a bin object. If there is no bin, returns null. 
                 • (:id) is the (shelf) and (bin) (id) EX. - 'A2', 'C4', 'B2'..
 
-            • PUT - /api/bin/:id - (Updates) and (Returns) a (bin) {object}
+            • PUT: /api/bin/:id - (Updates) and (Returns) a (bin) {object}
                 • This endpoint is only accesible if there is a bin object.
                     • (:id) is the (shelf) and (bin) combined. EX - 'A5', 'B1', 'C3'.
 
-            •DELETE - /api/bin/:id - Deletes a bin object. Returns nothing.
+            •DELETE: /api/bin/:id - Deletes a bin object. Returns nothing.
                 • :id is the shelf and bn id combined. EX. - 'A2', 'C4', 'B2'.
             
-            • POST /api/bin/:id - Cretes a new bin object. Returns nothing. 
+            • POST: /api/bin/:id - Cretes a new bin object. Returns nothing. 
                 • This endpoint should only be accessible if there is not a bin object already. 
                 • :id is the shelf and bin id combined. EX. - 'A2', 'C4', 'B2'.
 
@@ -64,7 +66,16 @@
 
     Environment:
         - dotenv: (For environment connection between db. local port, and server)
+
         - massive: (Handling our connection with Heroku & SQL DB)
+
+        - nodejs: When excuting a command with node, all your doing is telling it to run that file's script. 
+           • Ex. -  node index.js is telling node to excute the index.js file.
+
+        - Running multiple NPM NODE scripts (running scripts sequentially)
+
+
+
 
 
 ***icebox***

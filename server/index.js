@@ -41,7 +41,7 @@ app.listen(SERVER_PORT, () => console.log(`Hey Hey, Your Server, Works Today ${S
 // sending a 'GET' request with '/' (slash)
 
     // When express sends a 'GET' request 
-- Really all express is 
+// - Really all express is saying is GET this Http: route
 
   app.get('/', function(req,res){
     res.send('Hello form my library app');
