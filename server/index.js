@@ -1,8 +1,10 @@
 require('dotenv').config();
-
 const express = require('express');
 const massive = require('massive');
 const { Database } = require('massive');
+// LEAVE SPACE after the 'required' packages at the top so can differentiate from required packages and further code. 
+
+
 
 const app = express();
 
@@ -29,17 +31,21 @@ app.post
 app.delete() 
 
 
+// Getting express running and listening on a port:
 
 app.listen(SERVER_PORT, () => console.log(`Hey Hey, Your Server, Works Today ${SERVER_PORT}`));
 
 
 // Will utilize Express
 
-sending a 'GET' request using express: 
+// sending a 'GET' request with '/' (slash)
+
+    // When express sends a 'GET' request 
+- Really all express is 
+
   app.get('/', function(req,res){
     res.send('Hello form my library app');
   })
 
-  // Getting express running and listening on a port:
-
-  app.listen(3993, );
+// REMEMBER: Declared express earlier by vaibale after requirnig it further up: const app = express();
+    // 
