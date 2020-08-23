@@ -31,3 +31,15 @@ app.delete()
 
 
 app.listen(SERVER_PORT, () => console.log(`Hey Hey, Your Server, Works Today ${SERVER_PORT}`));
+
+
+// Will utilize Express
+
+sending a 'GET' request using express: 
+  app.get('/', function(req,res){
+    res.send('Hello form my library app');
+  })
+
+  // Getting express running and listening on a port:
+
+  app.listen(3993, );
