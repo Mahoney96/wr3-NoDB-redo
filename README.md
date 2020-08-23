@@ -11,7 +11,7 @@
 
     File Structure:
     - src
-        - Components:
+        - Components: axios is used for sending requests to the server to retrieve components that change state aka have a - put, get, post, delete request attached to their functionality. 
             - Header (Act as breadcrumb) - 
             - 
         - Router:
